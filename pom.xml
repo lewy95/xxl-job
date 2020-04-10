@@ -13,7 +13,7 @@
 	<modules>
 		<module>xxl-job-core</module>
 		<module>xxl-job-admin</module>
-		<module>xxl-job-executor-samples</module>
+<!--		<module>xxl-job-executor-samples</module>-->
     </modules>
 
 	<properties>
@@ -27,11 +27,12 @@
 		<xxl-rpc.version>1.5.0</xxl-rpc.version>
 
 		<spring.version>5.2.3.RELEASE</spring.version>
-		<spring-boot.version>2.2.3.RELEASE</spring-boot.version>
+		<spring-boot.version>2.2.6.RELEASE</spring-boot.version>
 
+		<mysql.version>8.0.19</mysql.version>
 		<mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
 		<mysql-connector-java.version>8.0.18</mysql-connector-java.version>
-
+		<lombok.version>1.18.12</lombok.version>
 		<slf4j-api.version>1.7.30</slf4j-api.version>
 		<junit.version>4.13</junit.version>
 
@@ -42,6 +43,14 @@
 		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
 		<maven-war-plugin.version>3.2.3</maven-war-plugin.version>
 	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
